@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/passwords",
+      "handler": "passwords.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/passwords/count",
+      "handler": "passwords.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/passwords/:id",
+      "handler": "passwords.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/passwords",
+      "handler": "passwords.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/passwords/:id",
+      "handler": "passwords.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/passwords/:id",
+      "handler": "passwords.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
